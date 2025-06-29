@@ -131,7 +131,7 @@ async function generatePalette() {
       tile.style.backgroundColor = color;
       tile.querySelector('.hex-code').textContent = color;
 
-      const response = await fetch('http://localhost:3000/api/chat', {
+      const response = await fetch('https://backhendcolorgen.vercel.app/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
