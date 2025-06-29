@@ -58,7 +58,7 @@ document
           debounceTimeout = setTimeout(async () => {
             console.log('Final color chosen:', newColor);
 
-            const response = await fetch('http://localhost:3000/api/chat', {
+            const response = await fetch('https://backhendcolorgen.vercel.app/api/chat', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
@@ -90,7 +90,7 @@ async function getRandomColor() {
   console.log(NumOfStrips);
 
   const response = await fetch(
-    'https://color-generator-resp-exj9sql0z-or-saadis-projects.vercel.app/api/chat',
+    'https://backhendcolorgen.vercel.app/api/chat',
     {
       method: 'POST',
       headers: {
@@ -386,7 +386,7 @@ function addColorStrip() {
               debounceTimeout = setTimeout(async () => {
                 console.log('Final color chosen:', newColor);
 
-                const response = await fetch('http://localhost:3000/api/chat', {
+                const response = await fetch('https://backhendcolorgen.vercel.app/api/chat', {
                   method: 'POST',
                   headers: {
                     'Content-Type': 'application/json',
